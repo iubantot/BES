@@ -13,7 +13,7 @@
 		  <div class="carousel-inner" role="listbox" >
 			<div class="item active" align="center">
                <video autoplay loop width= "1000px" height="420">
-                 <source src="http://localhost/bes%20v1.0/img/vid_ad.mp4" width="1024" height="552" type="video/mp4">
+                 <source src="http://localhost/BES/img/vid_ad.mp4" width="1024" height="552" type="video/mp4">
                  Your browser does not support the video tag.
               </video>
 			</div>

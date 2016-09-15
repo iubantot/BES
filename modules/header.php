@@ -8,15 +8,15 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span> 
       </button>
-		  <a class="navbar-brand" href="../bes%20v1.0/">
-		  <img src="../bes%20v1.0/img/logo.png" width="auto" height="100px">
+		  <a class="navbar-brand" href="../BES/">
+		  <img src="../BES/img/logo.png" width="auto" height="100px">
 		  </a>
 		</div>
 	<div class="collapse navbar-collapse" id="myNavbar">
 
 		<!-- Navbar Right -->
 		<ul class="nav navbar-nav navbar-right">
-		  <li><a href="../bes%20v1.0/"><i class="fa fa-home fa-fw" aria-hidden="true"></i> Home</a></li>
+		  <li><a href="../BES/"><i class="fa fa-home fa-fw" aria-hidden="true"></i> Home</a></li>
 		  <li class="dropdown">
 			<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-camera fa-fw" aria-hidden="true"></i> Services
 			<span class="caret"></span></a>

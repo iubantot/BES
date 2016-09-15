@@ -1,20 +1,19 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Official Bootstrap -->
-  <!-- <link rel="stylesheet" href="http://localhost/bes%20v1.0/bootstrap/css/bootstrap.min.css">-->
-    <link rel="stylesheet" href="../bes%20v1.0/bootstrap/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="http://localhost/BES/bootstrap/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="../BES/bootstrap/css/bootstrap.min.css">
 
-  <script src="../bes%20v1.0/bootstrap/jquery/jquery.min.js"></script>
-  <script src="../bes%20v1.0/bootstrap/js/bootstrap.min.js"></script>
+  <script src="../BES/bootstrap/jquery/jquery.min.js"></script>
+  <script src="../BES/bootstrap/js/bootstrap.min.js"></script>
   <!-- Modified Bootstrap -->
-  <link rel="stylesheet" href="../bes%20v1.0/css/style.css">
-  <script src="..//bes%20v1.0/bootstrap/js/M_bootstrap.min.js"></script>
+  <link rel="stylesheet" href="../BES/css/style.css">
+  <script src="..//BES/bootstrap/js/M_bootstrap.min.js"></script>
    <!-- Fonts Awesome -->
-  <link rel="stylesheet" href="../bes%20v1.0/fa/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../BES/fa/css/font-awesome.min.css">
   <!-- datepicker -->
-  <link rel="stylesheet" href="../bes%20v1.0/add-ons/date-calendar/datepicker.css">
-  <script src="../bes%20v1.0/add-ons/date-calendar/bootstrap-datepicker.js" charset="UTF-8"></script>
+  <link rel="stylesheet" href="../BES/add-ons/date-calendar/datepicker.css">
+  <script src="../BES/add-ons/date-calendar/bootstrap-datepicker.js" charset="UTF-8"></script>
 <script>
 	$(document).ready(function(){
 		var date_input=$('input[name="date"]'); //our date input has the name "date"
