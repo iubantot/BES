@@ -75,11 +75,6 @@
 												 <button type="submit" class="btn btn-primary btn-block" name="login" >Sign in</button>
 							
 											</div>
-											<div class="checkbox">
-												 <label>
-												 <input type="checkbox"> keep me logged-in
-												 </label>
-											</div>
 									 </form>
 								</div>
 								<div class="bottom text-center">
@@ -106,79 +101,96 @@
         <button type="button" class="close" data-dismiss="modal">&times;</button>
         <h4 class="modal-title">Registration Form</h4>
       </div>
-		<div class="modal-body">
-			<div class="modal-body">
-				  <div class="row">
-					<div class="col-md-6">
-						<form class="form" role="form" method="post" action="modules/login.php" accept-charset="UTF-8" id="reg-nav">
+	  <form class="form" role="form" method="post" action="modules/sql-connect/register.php" accept-charset="UTF-8" id="login-nav">
 
-						<div class="form-group">
-						  <label for="fname">First Name:</label>
-						  <input class="form-control" id="fname" name="fname" required="required" type="text" placeholder=""/>
-						</div>
-						<div class="form-group">
-						  <label for="usr">Username:</label>
-						  <input type="text" class="form-control" id="usr">
-						</div>
-						<div class="form-group">
-						  <label for="usr">Password:</label>
-						  <input type="password" class="form-control" id="usr">
-						</div>
-						 <div class="form-group ">
-						  <label  for="date">
-						   Birthdate:
-						  </label>
-						  
-						  
-						   <div class="input-group">
-							<div class="input-group-addon">
-							 <i class="fa fa-calendar">
-							 </i>
-							</div>
-							<input class="form-control" id="date" name="date" placeholder="MM/DD/YYYY" type="text"/>
-						   </div>
-						  
-						 </div>
-						<div class="form-group">
-						  <label for="address">Address 1 :</label>
-						  <input type="text" class="form-control" id="address">
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="form-group">
-						  <label for="lname">Last Name:</label>
-						  <input type="text" class="form-control" id="lname">
-						</div>
-						<div class="form-group">
-						  <label for="email">E-mail:</label>
-						  <input type="text" class="form-control" id="email">
-						</div>
-						<div class="form-group">
-						  <label for="confirm_pass">Confirm Password:</label>
-						  <input type="password" class="form-control" id="confirm_pass">
-						</div>
-						<div class="form-group">
-						</div>
-						
-						<div class="form-group">
-										<label for="email">Gender:</label>
-										<br>
-										<div class="radio-inline">
-										<label><input type="radio" name="optradio" value="0">Male</label>
+		<div class="modal-body">
+									 <form class="form" role="form" method="post" action="modules/sql-connect/register.php" accept-charset="UTF-8" id="login-nav">
+										<div class="col-md-6">
+											<div class="form-group">
+												<label for="fname" class="cols-sm-2 control-label">Firstname</label>
+												<div class="cols-sm-10">
+													<div class="input-group">
+														<input class="form-control" id="fname" name="fname" required="required" type="text" placeholder="First Name"/>
+													</div>
+												</div>
+											</div>
+											<div class="form-group">
+												<label for="crt_uname" class="cols-sm-2 control-label">Username</label>
+												<div class="cols-sm-10">
+													<div class="input-group">
+														<input class="form-control" id="crt_uname" name="crt_uname" required="required" type="text" placeholder="Username"/>
+													</div>
+												</div>
+											</div>
+											<div class="form-group">
+												<label for="crt_pass" class="cols-sm-2 control-label">Password</label>
+												<div class="cols-sm-10">
+													<div class="input-group">
+														<input class="form-control" id="crt_pass" name="crt_pass" required="required" type="password" placeholder="Password"/>
+													</div>
+												</div>
+											</div>
+									 <div class="form-group ">
+									  <label  for="date">
+									   Birthdate:
+									  </label>
+									   <div class="input-group">
+										<input class="form-control" id="date" name="date" placeholder="MM/DD/YYYY" type="text"/>
+									   </div>
+									 </div>
+											<div class="form-group">
+												<label for="address" class="cols-sm-2 control-label">Address</label>
+												<div class="cols-sm-10">
+													<div class="input-group">
+														<input class="form-control" id="address" name="address" required="required" type="text" placeholder="Address"/>
+													</div>
+												</div>
+											</div>
 										</div>
-										<div class="radio-inline">
-										<label><input type="radio" name="optradio" value="1">Female</label>
-										</div>
-										</div>
-					</div>
-				  </div>
-				  </form>
-			</div>
+										<div class="col-md-6">
+											<div class="form-group">
+												<label for="lname" class="cols-sm-2 control-label">Lastname</label>
+												<div class="cols-sm-10">
+													<div class="input-group">
+														<input class="form-control" id="lname" name="lname" required="required" type="text" placeholder="Last Name"/>
+													</div>
+												</div>
+											</div>
+											<div class="form-group">
+												<label for="email" class="cols-sm-2 control-label">Email</label>
+												<div class="cols-sm-10">
+													<div class="input-group">
+														<input class="form-control" id="email" name="email" required="required" type="text" placeholder="Email"/>
+													</div>
+												</div>
+											</div>
+											<div class="form-group">
+												<label for="conf_pass" class="cols-sm-2 control-label">Confirm Password</label>
+												<div class="cols-sm-10">
+													<div class="input-group">
+														<input class="form-control" id="conf_pass" name="conf_pass" required="required" type="password" placeholder="Confirm Password"/>
+													</div>
+												</div>
+											</div>
+											<div class="form-group">
+												<label for="gender">Gender:</label>
+												<br>
+													<div class="radio-inline">
+														<input type="radio" name="gender" value="M">Male
+													</div>
+													<div class="radio-inline">
+														<input type="radio" name="gender" value="F">Female
+													</div>
+
+											</div>
+										</div>	
+											<div class="form-group">
+												 <button type="submit" class="btn btn-primary btn-block" name="register" >Register</button>
+							
+											</div>
+									 </form>
 		</div>
-      <div class="modal-footer">
-	    <button type="button" class="btn btn-default" data-dismiss="modal">Submit</button>
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
+	  
     </div>
 
   </div>
