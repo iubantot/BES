@@ -21,7 +21,7 @@ $q = "SELECT username,email FROM users WHERE username = '$userName' OR email = '
 		if($res->num_rows > 0)
 		{
 			echo    "<script>
-                            alert('Username already in Use');
+                            alert('Username/email already in Use');
                             window.location.href='../../index.php';
                         </script>";
 		}
