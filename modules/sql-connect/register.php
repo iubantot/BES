@@ -18,9 +18,16 @@ if(isset($_POST['register']))
 	VALUES ('1','$userName','$password','$gender','$eMail','$formatted_date','$firstName','$lastName','$address')";
 
 if ($mysqli->query($sql) === TRUE) {
-    echo "Account Successfully Created";
+   echo    "<script>
+                            alert('Account Successfully Created!!');
+                            window.location.href='../../index.php';
+                        </script>";
+	
 } else {  
-                 echo "Error: " . $sql . "<br>" . $mysqli->error;
+               echo    "<script>
+                            alert('Username already in Use');
+                            window.location.href='../../index.php';
+                        </script>";
 			exit;
 }
 }
