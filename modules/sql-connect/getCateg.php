@@ -1,34 +1,22 @@
 <?php
-session_start();
-include("../config.php");
-if(isset($_POST['login']))
+//include("modules/config.php");
+if(isset($_GET['pick']))
 {
-	$userName = secure($_POST['username'], $mysqli);
-	$pass =  secure($_POST['password'], $mysqli);
-	echo $userName;
-	$q = "SELECT * FROM users WHERE username = '$userName' AND user_pass = '$pass'";
+	$pick = secure($_GET['pick'], $mysqli);
+	$q = "select pc.category, p.product_name, p.product_picture, p.descriptions, p.price ,p.quantity
+			from product_category pc join products p
+			on(p.category_id=pc.category_id)
+			where p.category_id= '$pick'";
 	if($res = $mysqli->query($q))
 	{
 		if($res->num_rows > 0)
 		{
-			$_SESSION['userName'] = $userName;
-			$_SESSION['loggedin'] = true;
 			$row = $res->fetch_assoc();
-			$_SESSION['groupID'] = $row['group_id'];
-			echo $_SESSION['userName'];
-			echo    "<script>
-                            alert('Welcome');
-                        </script>";
-			header("Location:../../index.php");
-			exit;
+			$_SESSION['category'] = $row['category'];
+			//echo $_SESSION['category'];
 		}
 		else
 		{
-			echo    "<script>
-                            alert('Incorrect Username/Password!');
-                            window.location.href='../../index.php';
-                        </script>";
-			exit;
 		}
 	}
 }

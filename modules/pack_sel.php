@@ -3,9 +3,13 @@
 <body>
 <br>
 <br>
-<div class="grad">
+<div class="wide">
   	<div class="col-xs-4 line"><hr></div>
-    <div class="col-xs-4 logo"></div>
+    <div class="col-xs-4 logo">
+	<?php
+	echo $_SESSION['category'];
+	?>
+	</div>
     <div class="col-xs-4 line"><hr></div>
 </div>
 </br>

@@ -15,10 +15,9 @@ if($i == 1){
 }else {
 	
 	include 'modules/header_log.php';
-	include 'modules/client.php';
 	if(isset($_GET['pick'])){
-		$user_pick = $_GET['pick'];
 		include 'modules/sql-connect/getCateg.php';
+		include 'modules/pack_sel.php';
 	}else{
 		
 		
