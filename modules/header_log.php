@@ -8,8 +8,8 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span> 
       </button>
-		  <a class="navbar-brand" href="../bes%20v1.0/">
-		  <img src="../bes%20v1.0/img/logo.png" width="auto" height="100px">
+		  <a class="navbar-brand" href="../BES/">
+		  <img src="../BES/img/logo.png" width="auto" height="100px">
 		  </a>
 		</div>
 	<div class="collapse navbar-collapse" id="myNavbar">
@@ -21,17 +21,17 @@
 			<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-camera fa-fw" aria-hidden="true"></i> Services
 			<span class="caret"></span></a>
 			<ul class="dropdown-menu">
-			  <li><a href="services.php">Graduation Photo</a></li>
+			  <li><a href="services.php?pick=1">Graduation Photo</a></li>
 			  <li class="divider"></li>
-			  <li><a href="#">Family Pictures</a></li>
+			  <li><a href="services.php?pick=2">Family Pictures</a></li>
 			  <li class="divider"></li>
-			  <li><a href="#">Debut Coverage</a></li>
+			  <li><a href="services.php?pick=3">Debut Coverage</a></li>
 			  <li class="divider"></li>
-			  <li><a href="#">Kid's Party Coverage</a></li> 
+			  <li><a href="services.php?pick=4">Kid's Party Coverage</a></li> 
 			  <li class="divider"></li>
-			  <li><a href="#">Wedding Coverage</a></li>
+			  <li><a href="services.php?pick=5">Wedding Coverage</a></li>
 			  <li class="divider"></li>
-			  <li><a href="#">Baptisim Coverage</a></li>
+			  <li><a href="services.php?pick=6">Baptisim Coverage</a></li>
 			  
 			  
 			</ul>
@@ -50,13 +50,16 @@
 			
 			<?php
 			$group = $_SESSION['groupID'];
-			if( $group > 0){
-			?>
-			<li><a href="#"><i class="fa fa-cog fa-fw" aria-hidden="true"></i> Admin Panel</a></li>
+			switch($group){
+			case 1:?><li><a href="#"><i class="fa fa-cog fa-fw" aria-hidden="true"></i> Employee Panel</a></li>
 			<?php
+			break;
+			case 2:?><li><a href="#"><i class="fa fa-cog fa-fw" aria-hidden="true"></i> Admin Panel</a></li>
+			<?php
+			break;
 			}
 			?>
-			  <li><a href="#"><i class="fa fa-cog fa-fw" aria-hidden="true"></i> My Account</a></li>
+			  <li><a href="account.php"><i class="fa fa-cog fa-fw" aria-hidden="true"></i> My Account</a></li>
 			  <li><a href="#"><i class="fa fa-shopping-cart fa-fw" aria-hidden="true"></i> Orders</a></li>
 			  <li class="divider"></li>
 			  <li><a href="modules/logout.php"><i class="fa fa-sign-out fa-fw" aria-hidden="true"></i> Sign-Out</a></li>

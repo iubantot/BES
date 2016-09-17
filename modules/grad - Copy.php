@@ -23,7 +23,7 @@
                 <div class="db-wrapper">
                     <div class="db-pricing-eleven db-bk-color-one">
                         <div class="price">
-                            <sup>PHP</sup>1500
+                            <sup>$</sup>99
                                 <small>per quarter</small>
                         </div>
                         <div class="type">
@@ -46,7 +46,7 @@
                  <div class="db-wrapper">
                 <div class="db-pricing-eleven db-bk-color-two popular">
                     <div class="price">
-                        <sup>PHP</sup>4000
+                        <sup>$</sup>159
                                 <small>per quarter</small>
                     </div>
                     <div class="type">
@@ -69,7 +69,7 @@
                  <div class="db-wrapper">
                 <div class="db-pricing-eleven db-bk-color-three">
                     <div class="price">
-                        <sup>PHP</sup>5000
+                        <sup>$</sup>799
                                 <small>per quarter</small>
                     </div>
                     <div class="type">
@@ -109,22 +109,22 @@
                                     <!-- Carousel items -->
                                     <div class="carousel-inner">
                                         <div class="active item" data-slide-number="0">
-                                        <img width="100%" src="img/grad/1.jpg" ></div>
+                                        <img src="http://localhost/bes%20v1.0/img/grad/1.jpg" ></div>
 
                                         <div class="item" data-slide-number="1">
-                                        <img width="100%" src="img/grad/2.jpg"></div>
+                                        <img src="http://localhost/bes%20v1.0/img/grad/2.jpg"></div>
 
                                         <div class="item" data-slide-number="2">
-                                        <img src="img/grad/3.jpg"></div>
+                                        <img src="http://localhost/bes%20v1.0/img/grad/3.jpg"></div>
 
                                         <div class="item" data-slide-number="3">
-                                        <img src="img/grad/4.jpg"></div>
+                                        <img src="http://localhost/bes%20v1.0/img/grad/4.jpg"></div>
 
                                         <div class="item" data-slide-number="4">
-                                        <img src="img/grad/5.jpg"></div>
+                                        <img src="http://localhost/bes%20v1.0/img/grad/5.jpg"></div>
 
                                         <div class="item" data-slide-number="5">
-                                        <img src="img/grad/6.jpg"></div>
+                                        <img src="http://localhost/bes%20v1.0/img/grad/6.jpg"></div>
                                     </div><!-- Carousel nav -->
                                     <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
                                         <span class="glyphicon glyphicon-chevron-left"></span>                                       
@@ -183,27 +183,27 @@
                         <!-- Bottom switcher of slider -->
                         <ul class="hide-bullets">
                             <li class="col-sm-2">
-                                <a class="thumbnail" id="carousel-selector-0"><img src="img/grad/1.jpg"></a>
+                                <a class="thumbnail" id="carousel-selector-0"><img src="http://localhost/bes%20v1.0/img/grad/1.jpg"></a>
                             </li>
 
                             <li class="col-sm-2">
-                                <a class="thumbnail" id="carousel-selector-1"><img src="img/grad/2.jpg"></a>
+                                <a class="thumbnail" id="carousel-selector-1"><img src="http://localhost/bes%20v1.0/img/grad/2.jpg"></a>
                             </li>
 
                             <li class="col-sm-2">
-                                <a class="thumbnail" id="carousel-selector-2"><img src="img/grad/3.jpg"></a>
+                                <a class="thumbnail" id="carousel-selector-2"><img src="http://localhost/bes%20v1.0/img/grad/3.jpg"></a>
                             </li>
 
                             <li class="col-sm-2">
-                                <a class="thumbnail" id="carousel-selector-3"><img src="img/grad/4.jpg"></a>
+                                <a class="thumbnail" id="carousel-selector-3"><img src="http://localhost/bes%20v1.0/img/grad/4.jpg"></a>
                             </li>
 
                             <li class="col-sm-2">
-                                <a class="thumbnail" id="carousel-selector-4"><img src="img/grad/5.jpg"></a>
+                                <a class="thumbnail" id="carousel-selector-4"><img src="http://localhost/bes%20v1.0/img/grad/5.jpg"></a>
                             </li>
 
                             <li class="col-sm-2">
-                                <a class="thumbnail" id="carousel-selector-5"><img src="img/grad/6.jpg"></a>
+                                <a class="thumbnail" id="carousel-selector-5"><img src="http://localhost/bes%20v1.0/img/grad/6.jpg"></a>
                             </li>
                         </ul>                 
                 </div>

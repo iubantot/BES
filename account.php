@@ -30,8 +30,7 @@ if($i == 1){
 	}else if ($group == 2){
 		include 'modules/admin.php';
 	}
-	include 'modules/services.php'; 
-	include 'modules/photographers.php';
+	include 'modules/dashboard.php';
 
 }
 

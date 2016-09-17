@@ -21,17 +21,17 @@
 			<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-camera fa-fw" aria-hidden="true"></i> Services
 			<span class="caret"></span></a>
 			<ul class="dropdown-menu">
-			  <li><a href="services.php">Graduation Photo</a></li>
+			  <li><a href="services.php?pick=1">Graduation Photo</a></li>
 			  <li class="divider"></li>
-			  <li><a href="">Family Pictures</a></li>
+			  <li><a href="services.php?pick=2">Family Pictures</a></li>
 			  <li class="divider"></li>
-			  <li><a href="#">Debut Coverage</a></li>
+			  <li><a href="services.php?pick=3">Debut Coverage</a></li>
 			  <li class="divider"></li>
-			  <li><a href="#">Kid's Party Coverage</a></li> 
+			  <li><a href="services.php?pick=4">Kid's Party Coverage</a></li> 
 			  <li class="divider"></li>
-			  <li><a href="#">Wedding Coverage</a></li>
+			  <li><a href="services.php?pick=5">Wedding Coverage</a></li>
 			  <li class="divider"></li>
-			  <li><a href="#">Baptisim Coverage</a></li>
+			  <li><a href="services.php?pick=6">Baptisim Coverage</a></li>
 			  
 			  
 			</ul>
@@ -41,12 +41,12 @@
 
 				
 			  <li class="dropdown">
-			  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user fa-fw" aria-hidden="true"></i> Sign in <span class="caret"></span></a>
+			  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-sign-in fa-fw" aria-hidden="true"></i> Sign in <span class="caret"></span></a>
 				<ul id="login-dp" class="dropdown-menu">
 					<li>
 						 <div class="row">
 								<div class="col-md-12">
-									 <form class="form" role="form" method="post" action="modules/login.php" accept-charset="UTF-8" id="login-nav">
+									 <form class="form" role="form" method="post" action="modules/sql-connect/login.php" accept-charset="UTF-8" id="login-nav">
 											
 											<div class="form-group">
 												<label for="name" class="cols-sm-2 control-label">Username</label>
@@ -110,9 +110,11 @@
 			<div class="modal-body">
 				  <div class="row">
 					<div class="col-md-6">
+						<form class="form" role="form" method="post" action="modules/login.php" accept-charset="UTF-8" id="reg-nav">
+
 						<div class="form-group">
 						  <label for="fname">First Name:</label>
-						  <input type="text" class="form-control" id="fname">
+						  <input class="form-control" id="fname" name="fname" required="required" type="text" placeholder=""/>
 						</div>
 						<div class="form-group">
 						  <label for="usr">Username:</label>
@@ -168,11 +170,9 @@
 										<label><input type="radio" name="optradio" value="1">Female</label>
 										</div>
 										</div>
-						
-						
-						
 					</div>
 				  </div>
+				  </form>
 			</div>
 		</div>
       <div class="modal-footer">
