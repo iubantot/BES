@@ -18,12 +18,7 @@ if($i == 1){
 	include 'modules/client.php';
 	if(isset($_GET['pick'])){
 		$user_pick = $_GET['pick'];
-		switch($user_pick){
-			case 1 : 	include 'modules/grad.php';
-						break;
-			case 2 : 	include 'modules/fam.php';
-						break;
-		}
+		include 'modules/sql-connect/getCateg.php';
 	}else{
 		
 		
