@@ -27,11 +27,16 @@
                 <div class="db-wrapper">
                     <div class="db-pricing-eleven db-bk-color-one">
                         <div class="price">
-                            <sup>PHP</sup>1500
+                            <sup>PHP</sup><?php
+							echo $_SESSION['price'];
+							?>
+							
                                 <small>per quarter</small>
                         </div>
                         <div class="type">
-                            Grad Package 1
+							<?php
+							echo $_SESSION['product_name'];
+							?>
                         </div>
                         <ul>
 
@@ -47,8 +52,43 @@
                 </div>
             </div>
 
-        </div>
+        
+		<?php
+			while($row = $res->fetch_assoc()) {
 
+		?>
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <div class="db-wrapper">
+                    <div class="db-pricing-eleven db-bk-color-one">
+                        <div class="price">
+                            <sup>PHP</sup><?php
+							echo $row['price'];
+							?>
+                                <small>per quarter</small>
+                        </div>
+                        <div class="type">
+                            <?php
+							echo $row['product_name'];
+							?>
+                        </div>
+                        <ul>
+
+                            <li><i class="glyphicon glyphicon-print"></i>15 best high resolution photos saved in a CD</li>
+                            <li><i class="glyphicon glyphicon-time"></i>150+ Projects </li>
+                            <li><i class="glyphicon glyphicon-trash"></i>Lead Required</li>
+                        </ul>
+                        <div class="pricing-footer">
+
+                            <a href="#" class="btn db-button-color-square btn-lg">BOOK ORDER</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+		<?php
+			}
+		?>
+</div>
     </div>
     </div>
 </br>

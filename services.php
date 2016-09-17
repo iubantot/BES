@@ -11,7 +11,14 @@ $i = 0;
 }
 if($i == 1){
 	include 'modules/header.php';
-	include 'modules/grad.php';
+	//include 'modules/grad.php';
+	if(isset($_GET['pick'])){
+		include 'modules/sql-connect/getCateg.php';
+		include 'modules/pack_sel.php';
+	}else{
+		
+		
+	}
 }else {
 	
 	include 'modules/header_log.php';

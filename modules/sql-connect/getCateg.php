@@ -13,6 +13,10 @@ if(isset($_GET['pick']))
 		{
 			$row = $res->fetch_assoc();
 			$_SESSION['category'] = $row['category'];
+			$_SESSION['product_name'] = $row['product_name'];
+			$_SESSION['price'] = $row['price'];
+			//$_SESSION['descript'] = $row['product_name'];
+
 			//echo $_SESSION['category'];
 		}
 		else
