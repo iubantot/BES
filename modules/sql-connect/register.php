@@ -11,10 +11,10 @@ if(isset($_POST['register']))
 	$password = secure($_POST['crt_pass'], $mysqli);
 	$date = secure($_POST['date'], $mysqli);
 	$gender = secure($_POST['gender'], $mysqli);
+	$address=secure($_POST['address'], $mysqli);
+	echo $date;
+	
 
-
-
-	echo $gender;
 }
 
 
