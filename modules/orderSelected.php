@@ -1,10 +1,7 @@
 <html>
 <body>
 <?php
-session_start();
 include 'modules/loadboot.php'; 
-include 'modules/config.php';
-	include 'modules/header.php';
 ?>
 <br>
 <br>

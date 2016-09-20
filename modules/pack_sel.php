@@ -45,8 +45,11 @@
                             <li><i class="glyphicon glyphicon-trash"></i>Lead Required</li>
                         </ul>
                         <div class="pricing-footer">
+							<?php
+							$pack_sel = $_SESSION['product_no'];
+							 echo '<a href="orderform.php?pack_pick='.$pack_sel.'" class="btn db-button-color-square btn-lg">BOOK ORDER</a>';
 
-                            <a href="#" class="btn db-button-color-square btn-lg">BOOK ORDER</a>
+							?>
                         </div>
                     </div>
                 </div>
@@ -79,8 +82,11 @@
                         </ul>
                         <div class="pricing-footer">
 
-                            <a href="#" class="btn db-button-color-square btn-lg">BOOK ORDER</a>
-                        </div>
+							<?php
+							$pack_select = $row['product_no'];
+							 echo '<a href="orderform.php?pack_pick='.$pack_select.'" class="btn db-button-color-square btn-lg">BOOK ORDER</a>';
+
+							?>                        </div>
                     </div>
                 </div>
             </div>

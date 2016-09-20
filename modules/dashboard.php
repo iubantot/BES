@@ -1,7 +1,6 @@
-<html>
 <head>
-  <link rel="stylesheet" href="dashboard.css">
-  <script src="dashboard.js"></script>
+  <link rel="stylesheet" href="../css/dashboard.css">
+  <script src="../js/dashboard.js"></script>
 </head>
 <body>
 <!-- header -->
@@ -136,4 +135,3 @@
 </div>
 <!-- /.modal -->
 </body>
-</html>
