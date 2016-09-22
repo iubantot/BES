@@ -14,7 +14,9 @@ if(isset($_POST['login']))
 			$_SESSION['userName'] = $userName;
 			$_SESSION['loggedin'] = true;
 			$row = $res->fetch_assoc();
+			$_SESSION['users_id'] = $row['users_id'];
 			$_SESSION['groupID'] = $row['group_id'];
+
 			echo $_SESSION['userName'];
 			echo    "<script>
                             alert('Welcome');

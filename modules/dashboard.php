@@ -39,7 +39,7 @@
                 <div class="col-md-6">
 
 
-                    <div class="btn-group btn-group-justified">
+                    <div class="btn-group btn-group-justified" >
                         <a href="#" class="btn btn-primary col-sm-3">
                             <i class="glyphicon glyphicon-plus"></i>
                             <br> My Orders
@@ -73,13 +73,26 @@
 
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h4>New Requests</h4></div>
+                            <h4>My Orders</h4></div>
                         <div class="panel-body">
-                            <div class="list-group">
-                                <a href="#" class="list-group-item active">Hosting virtual mailbox serv..</a>
-                                <a href="#" class="list-group-item">Dedicated server doesn't..</a>
-                                <a href="#" class="list-group-item">RHEL 6 install on new..</a>
-                            </div>
+						<?php
+                            echo '
+							<table class="table">
+								<thead>
+								  <tr>
+									<th>Order Id</th>
+									<th>Package Name</th>
+									<th>Status</th>
+								  </tr>
+								</thead>
+								<tbody>
+								';
+							include ("sql-connect/getOrder.php");
+
+							echo '	</tbody>
+							</table>
+							';
+							?>
                         </div>
                     </div>
                 </div>

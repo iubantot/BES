@@ -6,6 +6,8 @@ include 'modules/loadboot.php';
 include 'modules/config.php';
 
 ?>
+  <link rel="stylesheet" href="/css/orderform.css">
+
 </head>
 
 <body>
@@ -18,8 +20,7 @@ $i = 0;
 //--------------------------- Header Selector --------------------------------
 if($i == 1){ 
 	include 'modules/header.php';
-	include 'modules/orderSelected.php';
-
+	include 'modules/loginfirst.php';
 }else { 
 	include 'modules/header_log.php';
 //----------------------------------------------------------------------------
@@ -33,15 +34,19 @@ if($i == 1){
 	}else if ($group == 2){
 		include 'modules/admin.php';
 	}
-	echo $_GET['pack_pick'];
-
 }
 //----------------------------------------------------------------------------
 
-include 'modules/footer.php'; 
 
 ?>
-
+<footer>
+<br>
+<br>
+<br>
+<?php
+include 'modules/footer.php'; 
+?>
+</footer>
 
 </body>
 </html>
