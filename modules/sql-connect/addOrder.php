@@ -10,12 +10,10 @@ if(isset($_POST['addOrder']))
 	$date = secure($_POST['date'], $mysqli);
 	$payment = secure($_POST['payment'], $mysqli);
 	$formatted_date = date('Y-m-d', strtotime($date));
-	echo $formatted_date;
-	echo $users_id;
-	$date_ordered = date("Y-m-d");
+
+
 	
- $sql = "INSERT INTO `transactions` (`transaction_id`, `users_id`, `product_no`,`address`, `mode_id`, `status`, `total_price`, `schedule`, `date_ordered`, `date_confirmed`) 
-		VALUES (NULL,'$users_id','$product_no','$Eaddress','$payment','0', '$price', '$formatted_date', '$date_ordered', '0000-00-00 00:00:00')";
+ $sql = "insert into transactions(users_id,product_no,address,mode_id,status,total_price,schedule)values('$users_id','$product_no','$Eaddress','$payment','0','$price','$formatted_date')"; 
 echo  $sql;
 			if ($mysqli->query($sql) === TRUE) {
 				echo    "<script>
