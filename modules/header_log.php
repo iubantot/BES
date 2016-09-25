@@ -8,9 +8,10 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span> 
       </button>
-		  <a class="navbar-brand" href="../BES/">
-			BlueEye-Studio
-		  </a>
+	  		  <div class="navbar-brand">
+
+		  </div>
+
 		</div>
 	<div class="collapse navbar-collapse" id="myNavbar">
 
@@ -43,9 +44,9 @@
 
 		  <li><a class="dropdown-toggle" data-toggle="dropdown" href="#">
 		  <?php
-		  
+				//include 'modules/sql-connect/getImage.php';
+				echo '<i><img src="modules/sql-connect/getImage.php?id='.$_SESSION['users_id'].'" class="img-circle" width="20" height="20"/> </i>';
 			echo "Welcome, ".$_SESSION['userName'];
-			echo '<img src="html/showimage.php?id='.$_SESSION['users_id'].'" class="img-circle" width="32" height="32"/> '
 		  ?>
 		  
 		  <span class="caret"></span></a>

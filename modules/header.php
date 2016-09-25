@@ -9,7 +9,7 @@
         <span class="icon-bar"></span> 
       </button>
 		  <div class="navbar-brand">
-			<a href="../BES/">BlueEye-Studio</a>
+
 		  </div>
 		</div>
 	<div class="collapse navbar-collapse" id="myNavbar">
@@ -113,31 +113,28 @@
 												<label for="fname" class="cols-sm-2 control-label">Firstname</label>
 												<div class="cols-sm-10">
 													<div class="input-group">
+														<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
 														<input class="form-control" id="fname" name="fname" required="required" type="text" placeholder="First Name"/>
 													</div>
 												</div>
 											</div>
 											<div class="form-group">
-												<label for="crt_uname" class="cols-sm-2 control-label">Username</label>
+												<label for="lname" class="cols-sm-2 control-label">Lastname</label>
 												<div class="cols-sm-10">
 													<div class="input-group">
-														<input class="form-control" id="crt_uname" name="crt_uname" required="required" type="text" placeholder="Username"/>
+														<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+														<input class="form-control" id="lname" name="lname" required="required" type="text" placeholder="Last Name"/>
 													</div>
 												</div>
 											</div>
-											<div class="form-group">
-												<label for="crt_pass" class="cols-sm-2 control-label">Password</label>
-												<div class="cols-sm-10">
-													<div class="input-group">
-														<input class="form-control" id="crt_pass" name="crt_pass" required="required" type="password" placeholder="Password"/>
-													</div>
-												</div>
-											</div>
+											
+											
 									 <div class="form-group ">
 									  <label  for="date">
 									   Birthdate:
 									  </label>
 									   <div class="input-group">
+									   <span class="input-group-addon"><i class="fa fa-calendar fa" aria-hidden="true"></i></span>
 										<input class="form-control" id="date" name="date" placeholder="MM/DD/YYYY" type="text"/>
 									   </div>
 									 </div>
@@ -145,33 +142,8 @@
 												<label for="address" class="cols-sm-2 control-label">Address</label>
 												<div class="cols-sm-10">
 													<div class="input-group">
+														<span class="input-group-addon"><i class="fa fa-home fa" aria-hidden="true"></i></span>
 														<input class="form-control" id="address" name="address" required="required" type="text" placeholder="Address"/>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="col-md-6">
-											<div class="form-group">
-												<label for="lname" class="cols-sm-2 control-label">Lastname</label>
-												<div class="cols-sm-10">
-													<div class="input-group">
-														<input class="form-control" id="lname" name="lname" required="required" type="text" placeholder="Last Name"/>
-													</div>
-												</div>
-											</div>
-											<div class="form-group">
-												<label for="email" class="cols-sm-2 control-label">Email</label>
-												<div class="cols-sm-10">
-													<div class="input-group">
-														<input class="form-control" id="email" name="email" required="required" type="text" placeholder="Email"/>
-													</div>
-												</div>
-											</div>
-											<div class="form-group">
-												<label for="conf_pass" class="cols-sm-2 control-label">Confirm Password</label>
-												<div class="cols-sm-10">
-													<div class="input-group">
-														<input class="form-control" id="conf_pass" name="conf_pass" required="required" type="password" placeholder="Confirm Password"/>
 													</div>
 												</div>
 											</div>
@@ -179,13 +151,54 @@
 												<label for="gender">Gender:</label>
 												<br>
 													<div class="radio-inline">
-														<input type="radio" name="gender" value="M">Male
+														<input type="radio" name="gender" value="M">Male<i class="fa fa-male fa-fw" aria-hidden="true"></i>
 													</div>
 													<div class="radio-inline">
-														<input type="radio" name="gender" value="F">Female
+														<input type="radio" name="gender" value="F">Female<i class="fa fa-female fa-fw" aria-hidden="true"></i>
 													</div>
 
 											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group">
+												<label for="crt_uname" class="cols-sm-2 control-label">Username</label>
+												<div class="cols-sm-10">
+													<div class="input-group">
+														<span class="input-group-addon"><i class="fa fa-user-plus fa" aria-hidden="true"></i></span>
+														<input class="form-control" id="crt_uname" name="crt_uname" required="required" type="text" placeholder="Username"/>
+													</div>
+												</div>
+											</div>
+											<div class="form-group">
+											
+												<label for="crt_pass" class="cols-sm-2 control-label">Password</label>
+												<div class="cols-sm-10">
+													<div class="input-group">
+													<span class="input-group-addon"><i class="fa fa-lock fa" aria-hidden="true"></i></span>
+														<input class="form-control" id="crt_pass" name="crt_pass" required="required" type="password" placeholder="Password"/>
+													</div>
+												</div>
+											</div>
+											<div class="form-group">
+												<label for="conf_pass" class="cols-sm-2 control-label">Confirm Password</label>
+												<div class="cols-sm-10">
+													<div class="input-group">
+												        <span class="input-group-addon"><i class="fa fa-lock fa" aria-hidden="true"></i></span>
+														<input class="form-control" id="conf_pass" name="conf_pass" required="required" type="password" placeholder="Confirm Password"/>
+													</div>
+												</div>
+											</div>
+											<div class="form-group">
+												<label for="email" class="cols-sm-2 control-label">Email</label>
+												<div class="cols-sm-10">
+													<div class="input-group">
+														<span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+														<input class="form-control" id="email" name="email" required="required" type="text" placeholder="Email"/>
+													</div>
+												</div>
+											</div>
+											
+											
 										</div>	
 											<div class="form-group">
 												 <button type="submit" class="btn btn-primary btn-block" name="register" >Register</button>

@@ -1,14 +1,9 @@
-.navbar-brand {
-    position: absolute;
-    width: 100%;
-    left: 0;
-    top: 0;
-    text-align: center;
-    margin: auto;
+.navbar-text img {
 }
 
 .navbar-brand > a {
-	color: gray;
+	color: #2E86C1;
+	font-style:bold;
 	
 }
 
@@ -23,12 +18,7 @@
 	
 	
 /* navbar like twitter*/
-body {
-     background-color: #ffffff;
-     background-image: url("../img/bg.jpg");
-     background-repeat: no-repeat;
-     background-size:cover;
- }
+
 
 #container {
     margin-right: auto;
@@ -38,7 +28,7 @@ body {
 
 .navbar {
     margin-bottom: 0;
-    background: #fff;
+    background: #444444;
     border: none;
     border-radius: 0;
     -webkit-border-radius: 0;
@@ -60,7 +50,14 @@ body {
     top: 0;
     text-align: center;
     margin: auto;
+	background: url(../img/logo2.png) center / contain no-repeat;
+  width: 200px;
+  transform: translateX(-50%);
+  left: 50%;
+  position: absolute;
 }
+
+
 
 .navbar-default .navbar-nav {
     margin-right: 0px!important;
@@ -80,7 +77,7 @@ body {
 }
 
 .navbar-default .navbar-nav > li > a {
-    color: #1c1c1c;
+    color: white;
     display: block;
     font-size: 14px;
     font-weight: 200;
@@ -96,9 +93,23 @@ body {
 }
 
 .navbar-default .navbar-nav > li > a {
-    border-bottom: 3px solid #fff;
+    border-bottom: 3px solid #444444;
 }
 
 .navbar-default .navbar-nav > li > a.active, .navbar-default .navbar-nav > li:hover > a {
     border-bottom: 3px solid #2E86C1;
+}
+
+.modal-title{
+	color: white;
+	text-align:center;
+}
+
+.modal-header{
+	background-color: #222222;
+}
+
+#myModal .btn{
+	background-color:#222222;
+	
 }

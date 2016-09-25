@@ -9,26 +9,37 @@
 <!-- Main -->
 <div class="container-fluid">
     <div class="row">
-        <div class="col-sm-3">
+        <div class="col-sm-3 col-sm-offset-1">
             <!-- Left column -->
-            <a href="#"><strong><i class="glyphicon glyphicon-wrench"></i> Tools</strong></a>
+            <a href="#">
+			<?php
+			echo '<i><img src="modules/sql-connect/getImage.php?id='.$_SESSION['users_id'].'" id="displaypic" class="img-thumbnail" width="250" height="200"/> </i>';
 
-            <hr>
+			?>
+			</a>
 
-            <ul class="nav">
-                        <li class="active"> <a href="#"><i class="glyphicon glyphicon-home"></i> Home</a></li>
-                        <li><a href="#"><i class="glyphicon glyphicon-envelope"></i> Transactions <span class="badge badge-info">4</span></a></li>
-                        <li><a href="#"><i class="glyphicon glyphicon-cog"></i> Account Settings</a></li>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <?php
+							echo '<h4>'.$_SESSION['lname'].', '.$_SESSION['fname'].'</h4>';
+							?></div>
+                        <div class="panel-body">
+							<ul>
+								<li id = "address">Address</li>
+								<li id = "contact#">Contact #</li>
+								<li id = "contact#">Birthdate</li>
 
-                
-            </ul>
+
+							</ul>
+                        </div>
+                    </div>
 
            
 
            
         </div>
         <!-- /col-3 -->
-        <div class="col-sm-9">
+        <div class="col-sm-7">
 
 
             <a href="#"><strong><i class="glyphicon glyphicon-dashboard"></i> My Dashboard</strong></a>
@@ -36,7 +47,7 @@
 
             <div class="row">
                 <!-- center left-->
-                <div class="col-md-6">
+                <div class="col-md-12">
 
 
                     <div class="btn-group btn-group-justified" >
@@ -97,24 +108,7 @@
                     </div>
                 </div>
                 <!--/col-->
-                <div class="col-md-6">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4>User Info</h4></div>
-                        <div class="panel-body">
-							<ul>
-								<li id = "address">Address</li>
-								<li id = "contact#">Contact #</li>
-								<li id = "contact#">Birthdate</li>
 
-
-							</ul>
-                        </div>
-                    </div>
-
-                    
-
-                </div>
 
 
             </div>

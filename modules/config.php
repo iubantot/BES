@@ -1,8 +1,8 @@
 <?php
-$db_username = 'blue_eye';
-	$db_password = 'blue_eye';
+$db_username = 'blueeye';
+	$db_password = 'blueeye';
 	$db_name = 'blue_eye_studio';
-	$db_host = '25.45.193.96';
+	$db_host = 'localhost';
 	$mysqli = new mysqli($db_host, $db_username, $db_password,$db_name);
 	
 	function secure($str,$sqlHandle)

@@ -1,11 +1,16 @@
 <?php
-	session_start();
-	$q = "SELECT profile_picture FROM users WHERE users_id=".$_SESSION['users_id'];
-	$res = $mysqli->query($q);
-	while($row = $res->fetch_assoc())
-	{
-		echo $row["displaypic"];
+	include '../config.php';
+	$userid = $_GET['id'];
+	$q = "SELECT profile_picture FROM users WHERE users_id=$userid";
+	
+	if($res = $mysqli->query($q)){
+		if($res->num_rows > 0){
+			$row = $res->fetch_assoc();
+			header("content-type: image/jpeg");
+			echo $row['profile_picture'];
+		}else{
+
+		}
 	}
-	header("content-type: image/jpeg");
 	
 ?>

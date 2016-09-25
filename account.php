@@ -22,14 +22,11 @@ if($i == 1){
 	include 'modules/photographers.php';
 }else {
 	include 'modules/header_log.php';
+	echo '<br>';
+	echo '<br>';
+	echo '<br>';
+	echo '<br>';
 	$group = $_SESSION['groupID'];
-	if($group == 0){
-	include 'modules/client.php';	
-	}else if ($group == 1){
-		include 'modules/employee.php';
-	}else if ($group == 2){
-		include 'modules/admin.php';
-	}
 	include 'modules/dashboard.php';
 //
 }

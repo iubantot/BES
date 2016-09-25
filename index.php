@@ -9,6 +9,8 @@ include 'modules/config.php';
 </head>
 
 <body>
+<header>
+</header>
 <?php
 if(isset($_SESSION['userName'])){
 $i = 0;
@@ -17,20 +19,12 @@ $i = 0;
 }
 if($i == 1){
 	include 'modules/header.php';
-	include 'modules/ad_head.php';
 }else {
 	include 'modules/header_log.php';
-	$group = $_SESSION['groupID'];
-	if($group == 0){
-	include 'modules/client.php';	
-	}else if ($group == 1){
-		include 'modules/employee.php';
-	}else if ($group == 2){
-		include 'modules/admin.php';
-	}
-
 }
-
+	include 'modules/ad_head.php';
+echo '<h1>Welcome to BlueEye Photography Services!</h1>
+';
 include 'modules/footer.php'; 
 
 ?>

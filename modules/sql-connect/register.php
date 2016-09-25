@@ -14,6 +14,7 @@ if(isset($_POST['register']))
 	$address=secure($_POST['address'], $mysqli);
 	echo $date;
 	$formatted_date = date('Y-m-d', strtotime($date));
+
 	
 $q = "SELECT username,email FROM users WHERE username = '$userName' OR email = '$eMail'";
 	if($res = $mysqli->query($q))
