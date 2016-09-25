@@ -9,13 +9,13 @@
         <span class="icon-bar"></span> 
       </button>
 		  <a class="navbar-brand" href="../BES/">
-		  <img src="../BES/img/logo.png" width="auto" height="100px">
+			BlueEye-Studio
 		  </a>
 		</div>
 	<div class="collapse navbar-collapse" id="myNavbar">
 
 		<!-- Navbar Right -->
-		<ul class="nav navbar-nav navbar-right">
+		<ul class="nav navbar-nav navbar-left">
 		  <li><a href="index.php"><i class="fa fa-home fa-fw" aria-hidden="true"></i> Home</a></li>
 		  <li class="dropdown">
 			<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-camera fa-fw" aria-hidden="true"></i> Services
@@ -36,15 +36,18 @@
 			  
 			</ul>
 		  </li>
-		  <li><a href="#"><i class="fa fa-picture-o fa-fw" aria-hidden="true"></i> Portfolio</a></li> 
-		 <li><a href="#"><i class="fa fa-user-secret fa-fw" aria-hidden="true"></i> Our Team</a></li> 
+		  <li><a href="portfolio.php"><i class="fa fa-picture-o fa-fw" aria-hidden="true"></i> Portfolio</a></li> 
+		  </ul>
+		  <ul class="nav navbar-nav navbar-right">
+		 <li><a href="team.php"><i class="fa fa-user-secret fa-fw" aria-hidden="true"></i> Our Team</a></li> 
 
 		  <li><a class="dropdown-toggle" data-toggle="dropdown" href="#">
 		  <?php
 		  
 			echo "Welcome, ".$_SESSION['userName'];
+			echo '<img src="html/showimage.php?id='.$_SESSION['users_id'].'" class="img-circle" width="32" height="32"/> '
 		  ?>
-		  <i class="fa fa-user fa-fw" aria-hidden="true"></i>
+		  
 		  <span class="caret"></span></a>
 			<ul class="dropdown-menu">
 			

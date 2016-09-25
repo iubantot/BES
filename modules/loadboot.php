@@ -13,7 +13,12 @@
   <link rel="stylesheet" href="../BES/fa/css/font-awesome.min.css">
   <!-- datepicker -->
   <link rel="stylesheet" href="../BES/add-ons/date-calendar/datepicker.css">
+    <!-- datepicker -->
+    <link rel="stylesheet" href="../BES/css/header.css">
+
   <script src="../BES/add-ons/date-calendar/bootstrap-datepicker.js" charset="UTF-8"></script>
+  
+
 <script>
 	$(document).ready(function(){
 		var date_input=$('input[name="date"]'); //our date input has the name "date"

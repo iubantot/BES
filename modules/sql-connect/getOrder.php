@@ -1,5 +1,4 @@
 <?php
-//include("modules/config.php");
 		$users_id = $_SESSION['users_id'];
 		$q = "Select * from transactions where users_id='$users_id'";
 	

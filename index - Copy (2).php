@@ -18,6 +18,8 @@ $i = 0;
 if($i == 1){
 	include 'modules/header.php';
 	include 'modules/ad_head.php';
+	include 'modules/services.php'; 
+	include 'modules/photographers.php';
 }else {
 	include 'modules/header_log.php';
 	$group = $_SESSION['groupID'];
@@ -28,6 +30,8 @@ if($i == 1){
 	}else if ($group == 2){
 		include 'modules/admin.php';
 	}
+	include 'modules/services.php'; 
+	include 'modules/photographers.php';
 
 }
 

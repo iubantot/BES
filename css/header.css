@@ -1,0 +1,104 @@
+.navbar-brand {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    text-align: center;
+    margin: auto;
+}
+
+.navbar-brand > a {
+	color: gray;
+	
+}
+
+ .navbar-default .navbar-nav > li > a {
+   font: tahoma;
+    }
+
+ .navbar-default .navbar-nav > li > a:hover {
+   color: #2E86C1  ; /*Change active text color here*/
+    }
+	
+	
+	
+/* navbar like twitter*/
+body {
+     background-color: #ffffff;
+     background-image: url("../img/bg.jpg");
+     background-repeat: no-repeat;
+     background-size:cover;
+ }
+
+#container {
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #ffffff;
+}
+
+.navbar {
+    margin-bottom: 0;
+    background: #fff;
+    border: none;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -o-border-radius: 0;
+}
+
+.navbar-brand {
+    padding: 21px 25px 21px 25px;
+    margin: 0!important;
+    transition: all 0.3s ease-in-out;
+    color: #1c1c1c;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    text-align: center;
+    margin: auto;
+}
+
+.navbar-default .navbar-nav {
+    margin-right: 0px!important;
+    position: relative;
+    transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+}
+
+.navbar-default .navbar-nav > li {
+    margin-left: 5px;
+}
+
+.navbar-default .navbar-nav > li:first-child {
+    margin-left: 0px;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #1c1c1c;
+    display: block;
+    font-size: 14px;
+    font-weight: 200;
+	font-style: ;
+    padding: 20px;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+
+}
+
+.navbar-default .navbar-nav > li > a {
+    border-bottom: 3px solid #fff;
+}
+
+.navbar-default .navbar-nav > li > a.active, .navbar-default .navbar-nav > li:hover > a {
+    border-bottom: 3px solid #2E86C1;
+}

@@ -4,13 +4,7 @@ include 'modules/loadboot.php';
 ?>
 <br>
 <br>
-<div class="wide">
-  	<div class="col-xs-4 line"><hr></div>
-    <div class="col-xs-4 logo">
-		<h1>Checkout Form</h1>
-	</div>
-    <div class="col-xs-4 line"><hr></div>
-</div>
+
 <section class="order-form">
 <div class="container">
 	<form class="form" role="form" method="post" action="modules/sql-connect/addOrder.php" accept-charset="UTF-8" id="addOrder">
