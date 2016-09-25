@@ -64,7 +64,7 @@
 			}
 			?>
 			  <li><a href="account.php"><i class="fa fa-cog fa-fw" aria-hidden="true"></i> My Account</a></li>
-			  <li><a href="#"><i class="fa fa-shopping-cart fa-fw" aria-hidden="true"></i> Orders</a></li>
+
 			  <li class="divider"></li>
 			  <li><a href="modules/logout.php"><i class="fa fa-sign-out fa-fw" aria-hidden="true"></i> Sign-Out</a></li>
 			  <li class="divider"></li>

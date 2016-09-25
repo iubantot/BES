@@ -15,7 +15,7 @@ if(isset($_POST['login']))
 			$_SESSION['loggedin'] = true;
 			$row = $res->fetch_assoc();
 			$_SESSION['users_id'] = $row['users_id'];
-			$_SESSION['groupID'] = $row['group_id'];
+			$_SESSION['groupID'] = $row['title_id'];
 			$_SESSION['fname'] = $row['fname'];
 			$_SESSION['lname'] = $row['lname'];
 			$_SESSION['address'] = $row['address'];

@@ -34,6 +34,8 @@ include 'modules/loadboot.php';
 	//<------------------------ Order Summary ------------------------------------------->
 	echo '
 	<div class ="well col-md-offset-1 col-md-6">
+			<h4>Order Details</h4>
+			<hr>
 			<div class="form-group ">
 				<label for="Eaddress" class="cols-sm-2 control-label">Event Location : </label>
 				<div class="cols-sm-10">

@@ -28,6 +28,7 @@ if($i == 1){
 	echo '<br>';
 	$group = $_SESSION['groupID'];
 	include 'modules/dashboard.php';
+	include 'modules/orderInfo.php';
 //
 }
 

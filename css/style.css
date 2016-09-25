@@ -63,24 +63,14 @@
 
 
 
-.navbar {
-    -webkit-box-shadow: 0 8px 6px -6px #999;
-    -moz-box-shadow: 0 8px 6px -6px #999;
-    box-shadow: 0 8px 6px -6px #999;
 
-    /* the rest of your styling */
-}
 
 
 
 #advert{
 	background-color: transparent;
-	box-shadow: 0 0 30px #1c1c1c;
 	margin-top: 75px;
 	margin-bottom: 80px;
-	
-
-
 }
 
 

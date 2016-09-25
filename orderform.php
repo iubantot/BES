@@ -27,6 +27,9 @@ if($i == 1){
 //--------------------------- Content Selector --------------------------------
 	$group = $_SESSION['groupID'];
 	if($group == 0){
+	echo '<br>';
+	echo '<br>';
+	echo '<br>';
 	include 'modules/orderSelected.php';
 
 	}else if ($group == 1){

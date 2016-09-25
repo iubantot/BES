@@ -29,7 +29,7 @@ $q = "SELECT username,email FROM users WHERE username = '$userName' OR email = '
 		else
 		{
 			$sql = "INSERT INTO users (title_id,username,user_pass,gender,email,birthdate,fname,lname,address)
-			VALUES ('1','$userName','$password','$gender','$eMail','$formatted_date','$firstName','$lastName','$address')";
+			VALUES ('0','$userName','$password','$gender','$eMail','$formatted_date','$firstName','$lastName','$address')";
 							if ($mysqli->query($sql) === TRUE) {
 			   echo    "<script>
 										alert('Account Successfully Created!!');
