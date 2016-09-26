@@ -3,9 +3,9 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 22, 2016 at 08:45 PM
+-- Generation Time: Sep 26, 2016 at 04:18 AM
 -- Server version: 10.1.13-MariaDB
--- PHP Version: 7.0.6
+-- PHP Version: 5.6.23
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -49,7 +49,8 @@ CREATE TABLE `payment_mode` (
 --
 
 INSERT INTO `payment_mode` (`mode_id`, `mode_name`) VALUES
-(0, 'PayPal');
+(0, 'PayPal'),
+(1, 'Western Union');
 
 -- --------------------------------------------------------
 
@@ -174,8 +175,8 @@ CREATE TABLE `transactions` (
   `status` varchar(20) NOT NULL,
   `total_price` decimal(10,2) NOT NULL,
   `schedule` datetime NOT NULL,
-  `date_ordered` datetime NOT NULL,
-  `date_confirmed` datetime NOT NULL
+  `date_ordered` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `date_confirmed` datetime NOT NULL DEFAULT '0000-00-00 00:00:00'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -183,13 +184,12 @@ CREATE TABLE `transactions` (
 --
 
 INSERT INTO `transactions` (`transaction_id`, `users_id`, `product_no`, `address`, `mode_id`, `status`, `total_price`, `schedule`, `date_ordered`, `date_confirmed`) VALUES
-(1, 2000002, 1, '', 0, '2', '5500.00', '2016-09-17 00:00:00', '2016-09-24 00:00:00', '2016-09-30 00:00:00'),
-(2, 2000003, 2, '', 0, '0', '5500.00', '2016-09-22 00:00:00', '2016-09-21 00:00:00', '0000-00-00 00:00:00'),
-(5, 2000002, 2, '', 0, '0', '5500.00', '2016-09-03 00:00:00', '2016-09-22 00:00:00', '0000-00-00 00:00:00'),
-(6, 2000002, 2, '', 0, '0', '5500.00', '2016-09-02 00:00:00', '2016-09-22 00:00:00', '0000-00-00 00:00:00'),
-(7, 2000002, 17, '', 0, '0', '3500.00', '2016-09-30 00:00:00', '2016-09-22 00:00:00', '0000-00-00 00:00:00'),
-(8, 2000002, 14, 'san mateo', 0, '0', '8000.00', '2016-09-01 00:00:00', '2016-09-22 00:00:00', '0000-00-00 00:00:00'),
-(9, 2000008, 1, 'ther there', 0, '0', '4500.00', '2016-09-28 00:00:00', '2016-09-22 00:00:00', '0000-00-00 00:00:00');
+(11, 2000002, 0, 'TIP', 0, '0', '3500.00', '2016-09-25 00:00:00', '2016-09-23 03:14:34', '0000-00-00 00:00:00'),
+(15, 2000009, 0, 'asdsadasd', 0, '0', '3500.00', '2016-09-29 00:00:00', '2016-09-23 03:18:55', '0000-00-00 00:00:00'),
+(16, 2000009, 7, 'manila', 0, '0', '5500.00', '2016-09-28 00:00:00', '2016-09-23 03:20:26', '0000-00-00 00:00:00'),
+(17, 2000009, 11, 'cainta', 1, '0', '5500.00', '2016-09-26 00:00:00', '2016-09-23 03:21:00', '0000-00-00 00:00:00'),
+(18, 2000007, 13, 'sdasdasdasd', 1, '0', '7000.00', '2016-09-13 00:00:00', '2016-09-23 03:24:07', '0000-00-00 00:00:00'),
+(19, 2000007, 4, 'Taytay', 1, '0', '3500.00', '2016-09-29 00:00:00', '2016-09-23 05:05:11', '0000-00-00 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -240,7 +240,8 @@ INSERT INTO `users` (`users_id`, `title_id`, `username`, `user_pass`, `gender`, 
 (2000005, 1, 'asdasdas', '12345678', 'M', 'asdasdas@gmail.com', 0, '0000-00-00 00:00:00', '', '2016-09-06', 'asdasd', 'asdasdas', 'asdasdasdas', ''),
 (2000006, 1, 'hibari', 'test', 'M', 'hibari@gmail.com', 0, '0000-00-00 00:00:00', '', '2016-09-03', 'Kyoya', 'Hibari', 'San Mateo Rizal', ''),
 (2000007, 1, 'paul028', 'c9c9jwpaul', 'M', 'paulvincentnonat@gmail.com', 0, '0000-00-00 00:00:00', '', '1996-09-25', 'Paul Vincent', 'Nonat', 'Taytay', ''),
-(2000008, 1, 'iubantot', 'pangetka', 'M', 'iubantot@gmail.com', 0, '0000-00-00 00:00:00', '', '2016-09-02', 'kyoya', 'hibari', 'San Mateo Rizal', '');
+(2000008, 1, 'iubantot', 'pangetka', 'M', 'iubantot@gmail.com', 0, '0000-00-00 00:00:00', '', '2016-09-02', 'kyoya', 'hibari', 'San Mateo Rizal', ''),
+(2000009, 1, 'nalds', 'nalds', 'M', 'nasdasdasdasdas@gmail.com', 0, '0000-00-00 00:00:00', '', '2015-11-11', 'Nalds', 'nalds', 'cogeo', '');
 
 --
 -- Indexes for dumped tables
@@ -348,7 +349,7 @@ ALTER TABLE `service_schedule`
 -- AUTO_INCREMENT for table `transactions`
 --
 ALTER TABLE `transactions`
-  MODIFY `transaction_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `transaction_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 --
 -- AUTO_INCREMENT for table `usercart`
 --
@@ -358,7 +359,7 @@ ALTER TABLE `usercart`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `users_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2000009;
+  MODIFY `users_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2000010;
 --
 -- Constraints for dumped tables
 --
