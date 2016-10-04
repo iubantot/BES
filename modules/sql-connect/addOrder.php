@@ -23,7 +23,7 @@ if(isset($_POST['addOrder']))
 						
 					} else {  
 								   echo    "<script>
-												alert('Username already in Use');
+												alert('Failed to place Order');
 											</script>";
 								exit;
 							}
