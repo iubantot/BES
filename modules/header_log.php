@@ -45,7 +45,8 @@
 		  <li><a class="dropdown-toggle" data-toggle="dropdown" href="#">
 		  <?php
 				//include 'modules/sql-connect/getImage.php';
-				echo '<i><img src="modules/sql-connect/getImage.php?id='.$_SESSION['users_id'].'" class="img-circle" width="20" height="20"/> </i>';
+				
+			echo '<i><img src="modules/sql-connect/getImage.php?id='.$_SESSION['users_id'].'" class="img-circle" width="20" height="20"/> </i>';
 			echo "Welcome, ".$_SESSION['userName'];
 		  ?>
 		  

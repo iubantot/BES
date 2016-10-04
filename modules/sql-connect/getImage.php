@@ -5,11 +5,21 @@
 	
 	if($res = $mysqli->query($q)){
 		if($res->num_rows > 0){
+			if( empty( $row['blob_column'] )){
 			$row = $res->fetch_assoc();
 			header("content-type: image/jpeg");
 			echo $row['profile_picture'];
-		}else{
+			}else{
+			echo '
+			echo '<img src="img/tempo.jpg"/>';
 
+			';
+		}
+		}else{
+			echo '
+			echo '<img src="img/tempo.jpg"/>';
+
+			';
 		}
 	}
 	

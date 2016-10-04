@@ -127,6 +127,23 @@
 </br>
 <hr>
 </br>
+<?php
+$categ = $_SESSION['category'];
+if($categ == 'Graduation'){
+	$dir = 'grad';
+}else if($categ == 'Family Pictures'){
+	$dir = 'fam';
+}else if($categ == 'Debut Coverage'){
+	$dir = 'debut';
+}else if($categ == "Kid's Party Coverage"){
+	$dir = 'kid';
+}else if($categ == "Wedding Coverage"){
+	$dir = 'wed';
+}else if($categ == "Baptism Coverage"){
+	$dir = 'bapt';
+}
+
+?>
 <div class="container">
 		<h1>Sample shots</h1>
         <div id="main_area">
@@ -140,22 +157,24 @@
                                     <!-- Carousel items -->
                                     <div class="carousel-inner">
                                         <div class="active item" data-slide-number="0">
-                                        <img width="100%" src="img/grad/1.jpg" ></div>
+										<?php
+                                        echo '<img width="100%" src="img/'.$dir.'/1.jpg" ></div>
 
                                         <div class="item" data-slide-number="1">
-                                        <img width="100%" src="img/grad/2.jpg"></div>
+                                        <img width="100%" src="img/'.$dir.'/2.jpg"></div>
 
                                         <div class="item" data-slide-number="2">
-                                        <img src="img/grad/3.jpg"></div>
+                                        <img src="img/'.$dir.'/3.jpg"></div>
 
                                         <div class="item" data-slide-number="3">
-                                        <img src="img/grad/4.jpg"></div>
+                                        <img src="img/'.$dir.'/4.jpg"></div>
 
                                         <div class="item" data-slide-number="4">
-                                        <img src="img/grad/5.jpg"></div>
+                                        <img src="img/'.$dir.'/5.jpg"></div>
 
                                         <div class="item" data-slide-number="5">
-                                        <img src="img/grad/6.jpg"></div>
+                                        <img src="img/'.$dir.'/6.jpg"></div>';
+										?>
                                     </div><!-- Carousel nav -->
                                     <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
                                         <span class="glyphicon glyphicon-chevron-left"></span>                                       
@@ -213,29 +232,32 @@
                 <div class="row hidden-xs" id="slider-thumbs">
                         <!-- Bottom switcher of slider -->
                         <ul class="hide-bullets">
+						<?php
+						echo '
                             <li class="col-sm-2">
-                                <a class="thumbnail" id="carousel-selector-0"><img src="img/grad/1.jpg"></a>
+                                <a class="thumbnail" id="carousel-selector-0"><img src="img/'.$dir.'/1.jpg"></a>
                             </li>
 
                             <li class="col-sm-2">
-                                <a class="thumbnail" id="carousel-selector-1"><img src="img/grad/2.jpg"></a>
+                                <a class="thumbnail" id="carousel-selector-1"><img src="img/'.$dir.'/2.jpg"></a>
                             </li>
 
                             <li class="col-sm-2">
-                                <a class="thumbnail" id="carousel-selector-2"><img src="img/grad/3.jpg"></a>
+                                <a class="thumbnail" id="carousel-selector-2"><img src="img/'.$dir.'/3.jpg"></a>
                             </li>
 
                             <li class="col-sm-2">
-                                <a class="thumbnail" id="carousel-selector-3"><img src="img/grad/4.jpg"></a>
+                                <a class="thumbnail" id="carousel-selector-3"><img src="img/'.$dir.'/4.jpg"></a>
                             </li>
 
                             <li class="col-sm-2">
-                                <a class="thumbnail" id="carousel-selector-4"><img src="img/grad/5.jpg"></a>
+                                <a class="thumbnail" id="carousel-selector-4"><img src="img/'.$dir.'/5.jpg"></a>
                             </li>
 
                             <li class="col-sm-2">
-                                <a class="thumbnail" id="carousel-selector-5"><img src="img/grad/6.jpg"></a>
-                            </li>
+                                <a class="thumbnail" id="carousel-selector-5"><img src="img/'.$dir.'/6.jpg"></a>
+                            </li>';
+							?>
                         </ul>                 
                 </div>
         </div>

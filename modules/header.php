@@ -133,7 +133,7 @@
 									  </label>
 									   <div class="input-group">
 									   <span class="input-group-addon"><i class="fa fa-calendar fa" aria-hidden="true"></i></span>
-										<input class="form-control" id="date" name="date" placeholder="MM/DD/YYYY" type="text"/>
+										<input class="form-control" id="date" name="date" required="required" placeholder="MM/DD/YYYY" type="text"/>
 									   </div>
 									 </div>
 											<div class="form-group">
@@ -149,10 +149,10 @@
 												<label for="gender">Gender:</label>
 												<br>
 													<div class="radio-inline">
-														<input type="radio" name="gender" value="M">Male<i class="fa fa-male fa-fw" aria-hidden="true"></i>
+														<input type="radio" name="gender"  required="required" value="M">Male<i class="fa fa-male fa-fw" aria-hidden="true"></i>
 													</div>
 													<div class="radio-inline">
-														<input type="radio" name="gender" value="F">Female<i class="fa fa-female fa-fw" aria-hidden="true"></i>
+														<input type="radio" name="gender"  required="required" value="F">Female<i class="fa fa-female fa-fw" aria-hidden="true"></i>
 													</div>
 
 											</div>
