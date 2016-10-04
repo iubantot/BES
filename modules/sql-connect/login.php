@@ -19,12 +19,19 @@ if(isset($_POST['login']))
 			$_SESSION['fname'] = $row['fname'];
 			$_SESSION['lname'] = $row['lname'];
 			$_SESSION['address'] = $row['address'];
-
+			if($_SESSION['groupID'] < 2){
 			echo    "<script>
                             alert('Welcome');
                         </script>";
 			header("Location:../../index.php");
 			exit;
+			}else{
+				echo    "<script>
+                            alert('Welcome');
+                        </script>";
+			header("Location:../../admin.php");
+			exit;
+			}
 		}
 		else
 		{

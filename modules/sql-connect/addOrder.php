@@ -14,7 +14,7 @@ if(isset($_POST['addOrder']))
 
 	
  $sql = "insert into transactions(users_id,product_no,address,mode_id,status,total_price,schedule)values('$users_id','$product_no','$Eaddress','$payment','0','$price','$formatted_date')"; 
-echo  $sql;
+//echo  $sql;
 			if ($mysqli->query($sql) === TRUE) {
 				echo    "<script>
 							alert('Order Placed Successfully Created!!');

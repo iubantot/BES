@@ -12,7 +12,7 @@ if(isset($_POST['register']))
 	$date = secure($_POST['date'], $mysqli);
 	$gender = secure($_POST['gender'], $mysqli);
 	$address=secure($_POST['address'], $mysqli);
-	echo $date;
+	//echo $date;
 	$formatted_date = date('Y-m-d', strtotime($date));
 
 	

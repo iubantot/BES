@@ -19,7 +19,7 @@
 
 
   <script src="../BES/add-ons/date-calendar/bootstrap-datepicker.js" charset="UTF-8"></script>
-  
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 
 <script>
 	$(document).ready(function(){

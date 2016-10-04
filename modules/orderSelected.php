@@ -5,7 +5,6 @@ include 'modules/loadboot.php';
 <br>
 <br>
 
-<section class="order-form">
 <div class="container">
 	<form class="form" role="form" method="post" action="modules/sql-connect/addOrder.php" accept-charset="UTF-8" id="addOrder">
 
@@ -103,7 +102,6 @@ include 'modules/loadboot.php';
 	</form>
 </div>
 
-</section>
 
 
 

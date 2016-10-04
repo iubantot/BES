@@ -32,7 +32,7 @@
 			  <li class="divider"></li>
 			  <li><a href="services.php?pick=5">Wedding Coverage</a></li>
 			  <li class="divider"></li>
-			  <li><a href="services.php?pick=6">Baptisim Coverage</a></li>
+			  <li><a href="services.php?pick=6">Baptism Coverage</a></li>
 			  
 			  
 			</ul>
@@ -53,17 +53,26 @@
 			<ul class="dropdown-menu">
 			
 			<?php
-			$group = $_SESSION['groupID'];
-			switch($group){
-			case 1:?><li><a href="#"><i class="fa fa-cog fa-fw" aria-hidden="true"></i> Employee Panel</a></li>
-			<?php
-			break;
-			case 2:?><li><a href="#"><i class="fa fa-cog fa-fw" aria-hidden="true"></i> Admin Panel</a></li>
-			<?php
-			break;
-			}
+				$group = $_SESSION['groupID'];
+				switch($group){
+				case 0:
 			?>
-			  <li><a href="account.php"><i class="fa fa-cog fa-fw" aria-hidden="true"></i> My Account</a></li>
+				 <li><a href="account.php"><i class="fa fa-cog fa-fw" aria-hidden="true"></i> My Account</a></li>
+			<?php
+				break;
+				case 1:
+			?>
+			<li><a href="#"><i class="fa fa-cog fa-fw" aria-hidden="true"></i> Employee Panel</a></li>
+			<li><a href="account.php"><i class="fa fa-cog fa-fw" aria-hidden="true"></i> My Account</a></li>
+
+			<?php
+			break;
+			case 2:?><li><a href="admin.php"><i class="fa fa-cog fa-fw" aria-hidden="true"></i> Admin Panel</a></li>
+
+			<?php
+				break;
+				}
+			?>
 
 			  <li class="divider"></li>
 			  <li><a href="modules/logout.php"><i class="fa fa-sign-out fa-fw" aria-hidden="true"></i> Sign-Out</a></li>

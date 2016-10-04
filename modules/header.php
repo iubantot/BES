@@ -31,7 +31,7 @@
 			  <li class="divider"></li>
 			  <li><a href="services.php?pick=5">Wedding Coverage</a></li>
 			  <li class="divider"></li>
-			  <li><a href="services.php?pick=6">Baptisim Coverage</a></li>
+			  <li><a href="services.php?pick=6">Baptism Coverage</a></li>
 			  
 			  
 			</ul>
@@ -104,8 +104,6 @@
         <button type="button" class="close" data-dismiss="modal">&times;</button>
         <h4 class="modal-title">Registration Form</h4>
       </div>
-	  <form class="form" role="form" method="post" action="modules/sql-connect/register.php" accept-charset="UTF-8" id="login-nav">
-
 		<div class="modal-body">
 									 <form class="form" role="form" method="post" action="modules/sql-connect/register.php" accept-charset="UTF-8" id="login-nav">
 										<div class="col-md-6">
