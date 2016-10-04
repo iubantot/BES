@@ -20,11 +20,9 @@
                 <div class="col-lg-3  col-md-3 col-sm-6 col-xs-12 ">
                     <h3> Social Media Links </h3>
                     <ul class="social">
-                        <li> <a href="#"> <i class=" fa fa-facebook ">   </i> </a> </li>
-                        <li> <a href="#"> <i class="fa fa-twitter">   </i> </a> </li>
-                        <li> <a href="#"> <i class="fa fa-google-plus">   </i> </a> </li>
-                        <li> <a href="#"> <i class="fa fa-pinterest">   </i> </a> </li>
-                        <li> <a href="#"> <i class="fa fa-youtube">   </i> </a> </li>
+                        <li> <a href="https://web.facebook.com/Blue-Eye-Studios-180019688710581/?fref=ts"> <i class=" fa fa-facebook ">   </i> </a> </li>
+                        <li> <a href="https://twitter.com/BueEye"> <i class="fa fa-twitter">   </i> </a> </li>
+                        <li> <a href="https://www.youtube.com/channel/UCLJ7kSt28FSBEA3M-inDeww"> <i class="fa fa-youtube">   </i> </a> </li>
                     </ul>
                 </div>
             </div>
