@@ -39,10 +39,23 @@
 							?>
                         </div>
                         <ul>
+							<?php
+			$desc = $_SESSION['descriptions'];
+			//$descarray = array();
+			$desc_count = 0;
+			do{
+			
+			$i = strpos($desc,";");
+			$print = substr($desc,0,$i);
+			$descarray[$desc_count] = $print;
+			$desc = substr($desc,$i+1,strlen($desc));
+			echo '<li><i class="glyphicon glyphicon-time"></i>'.$descarray[$desc_count].'</li>';
+			$desc_count++;
 
-                            <li><i class="glyphicon glyphicon-print"></i>15 best high resolution photos saved in a CD</li>
-                            <li><i class="glyphicon glyphicon-time"></i>150+ Projects </li>
-                            <li><i class="glyphicon glyphicon-trash"></i>Lead Required</li>
+			}while($desc != "");
+			
+
+							?>
                         </ul>
                         <div class="pricing-footer">
 							<?php
@@ -76,9 +89,23 @@
                         </div>
                         <ul>
 
-                            <li><i class="glyphicon glyphicon-print"></i>15 best high resolution photos saved in a CD</li>
-                            <li><i class="glyphicon glyphicon-time"></i>150+ Projects </li>
-                            <li><i class="glyphicon glyphicon-trash"></i>Lead Required</li>
+							<?php
+			$desc = $row['descriptions'];
+			$descarray = array();
+			$desc_count = 0;
+			do{
+			
+			$i = strpos($desc,";");
+			$print = substr($desc,0,$i);
+			$descarray[$desc_count] = $print;
+			$desc = substr($desc,$i+1,strlen($desc));
+			echo '<li><i class="glyphicon glyphicon-time"></i>'.$descarray[$desc_count].'</li>';
+			$desc_count++;
+
+			}while($desc != '');
+			
+
+							?>
                         </ul>
                         <div class="pricing-footer">
 
