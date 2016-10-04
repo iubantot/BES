@@ -97,7 +97,7 @@ $(document).ready(function(){
 							
 							
                         <div class="panel-body">
-						<div class="row">
+						<!--<div class="row">
 								<div class="col-md-4">
 								Filter by :
 								<div class ="row">
@@ -126,7 +126,7 @@ $(document).ready(function(){
 											
 									</div>
 								</div>
-							</div>
+							</div> -->
 								<?php
 									echo '
 									<table class="table table-hover">

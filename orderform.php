@@ -35,7 +35,6 @@ if($i == 1){
 	}else if ($group == 1){
 		include 'modules/employee.php';
 	}else if ($group == 2){
-		include 'modules/admin.php';
 	}
 }
 //----------------------------------------------------------------------------
