@@ -185,43 +185,25 @@ if($categ == 'Graduation'){
                                     </div>
                             </div>
 
-                            <div class="col-sm-4" id="carousel-text"></div>
+                            <div class="col-sm-4 " id="carousel-text"></div>
 
                             <div id="slide-content" style="display: none;">
                                 <div id="slide-content-0">
-                                    <h2>Slider One</h2>
-                                    <p>Lorem Ipsum Dolor</p>
-                                    <p class="sub-text">October 24 2014 - <a href="#">Read more</a></p>
                                 </div>
 
                                 <div id="slide-content-1">
-                                    <h2>Slider Two</h2>
-                                    <p>Lorem Ipsum Dolor</p>
-                                    <p class="sub-text">October 24 2014 - <a href="#">Read more</a></p>
                                 </div>
 
                                 <div id="slide-content-2">
-                                    <h2>Slider Three</h2>
-                                    <p>Lorem Ipsum Dolor</p>
-                                    <p class="sub-text">October 24 2014 - <a href="#">Read more</a></p>
                                 </div>
 
                                 <div id="slide-content-3">
-                                    <h2>Slider Four</h2>
-                                    <p>Lorem Ipsum Dolor</p>
-                                    <p class="sub-text">October 24 2014 - <a href="#">Read more</a></p>
                                 </div>
 
                                 <div id="slide-content-4">
-                                    <h2>Slider Five</h2>
-                                    <p>Lorem Ipsum Dolor</p>
-                                    <p class="sub-text">October 24 2014 - <a href="#">Read more</a></p>
                                 </div>
 
                                 <div id="slide-content-5">
-                                    <h2>Slider Six</h2>
-                                    <p>Lorem Ipsum Dolor</p>
-                                    <p class="sub-text">October 24 2014 - <a href="#">Read more</a></p>
                                 </div>
 								
                             </div>

@@ -48,7 +48,7 @@
 											<div class="row">
 												<div class="col-md-7">
 													<h1>Transaction Id : '.$bow['transaction_id'].'</h1>
-													<h1>Users ID : '.$bow['users_id'].'</h1>
+													<h1>Users ID : '.$users_id.'</h1>
 												</div>
 												<div class="col-md-5">
 													<form class="form" role="form" method="post" action="modules/sql-connect/updateOrder.php?trans_id='.$bow['transaction_id'].'&status='.$bow['status'].'" >
