@@ -133,6 +133,7 @@ $(document).ready(function(){
 										<thead>
 										  <tr>
 											<th>Account Id</th>
+											<th>Customer Name</th>
 											<th>Order Id</th>
 											<th>Package Name</th>
 											<th>Status</th>
