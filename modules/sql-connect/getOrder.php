@@ -1,10 +1,12 @@
 <?php
 		$users_id = $_SESSION['users_id'];
-		$q = "SELECT t.users_id,concat(u.lname,', ',u.fname)  as Full_Name,t.transaction_id,p.product_name,t.status,t.date_ordered,t.schedule,t.total_price,t.mode_id
+		$q = "SELECT pm.mode_name,t.address,t.users_id,concat(u.lname,', ',u.fname)  as Full_Name,t.transaction_id,p.product_name,t.status,t.date_ordered,t.schedule,t.total_price,t.mode_id
 				FROM transactions t JOIN products p 
 				ON t.product_no = p.product_no
 				JOIN users u
                 ON u.users_id =t.users_id
+				JOIN payment_mode pm
+				ON t.mode_id = pm.mode_id
 		where t.users_id = '$users_id'";
 		
 	if($res = $mysqli->query($q))
@@ -49,24 +51,41 @@
 										<div class="modal-body">
 											<div class="row">
 												<div class="col-md-7">
-<<<<<<< HEAD
-												<h1>Transaction Id : '.$bow['transaction_id'].'</h1>
-													<h2>Users ID : '.$bow['users_id'].'</h2>
-													<h2>Customer Name : '.$bow['Full_Name'].'</h2>
-													<h2>Package Name : '.$bow['product_name'].'</h2>
-													<h2>Schedule : '.$bow['schedule'].'</h2>
-													<h2>Total Price : '.$bow['total_price'].'</h2>
-													<h2>Mode of Payment : '.$bow['mode_id'].'</h2>
+													<label class="cols-sm-7 control-label">Account Id : </label>'.$users_id.'
+													<br>
+													<label class="cols-sm-7 control-label">Transaction Id : </label>'.$bow['transaction_id'].'
+													<br>
+													<label class="cols-sm-7 control-label">Users ID : </label>'.$bow['users_id'].'
+													<br>
+													<label class="cols-sm-7 control-label">Event Location : </label>'.$bow['address'].'
+													<br>
+													<label class="cols-sm-7 control-label">Customer Name : </label>'.$bow['Full_Name'].'
+													<br>
+													<label class="cols-sm-7 control-label">Package Name : </label>'.$bow['product_name'].'
+													<br>
+													<label class="cols-sm-7 control-label">Schedule : </label>'.$bow['schedule'].'
+													<br>
+													<label class="cols-sm-7 control-label">Total Price : </label>'.$bow['total_price'].'
+													<br>
+													<label class="cols-sm-7 control-label">Mode of Payment : </label>'.$bow['mode_name'].'
+													<br>
 													
-													<h2>Date Ordered : '.$bow['date_ordered'].'</h2>
-=======
-													<h1>Transaction Id : '.$bow['transaction_id'].'</h1>
-													<h1>Users ID : '.$users_id.'</h1>
->>>>>>> origin/master
-												</div>
+												<label class="cols-sm-7 control-label">Date Ordered : </label>'.$bow['date_ordered'].'<br>';
+											
+											echo '<label class="cols-sm-7 control-label">Status : </label>';
+											switch($bow['status']){
+								case 0 : $status = "Pending";echo '<span class="label label-default">'.$status.'</span>';break;
+								case 1 : $status = "Processing";echo '<span class="label label-info">'.$status.'</span>';break;
+								case 2 : $status = "Approved";echo '<span class="label label-success">'.$status.'</span>';break;
+								case 3 : $status = "Declined";echo '<span class="label label-danger">'.$status.'</span>';break;
+								case 4 : $status = "Cancelled";echo '<span class="label label-warning">'.$status.'</span>';break;
+
+							}
+											echo '</div>
 												<div class="col-md-5">
 													<form class="form" role="form" method="post" action="modules/sql-connect/updateOrder.php?trans_id='.$bow['transaction_id'].'&status='.$bow['status'].'" >
-													<input class="btn btn-default" type="submit" name="action" value="Delete Order"/>
+													<input class="btn btn-danger btn-block" type="submit" name="action" value="Cancel Order"/>
+													
 													</form>
 												</div>
 											</div>

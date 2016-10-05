@@ -5,7 +5,6 @@ if(isset($_POST['login']))
 {
 	$userName = secure($_POST['username'], $mysqli);
 	$pass =  secure($_POST['password'], $mysqli);
-	echo $userName;
 	$q = "SELECT * FROM users WHERE username = '$userName' AND user_pass = '$pass'";
 	if($res = $mysqli->query($q))
 	{

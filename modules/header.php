@@ -1,3 +1,19 @@
+<script>
+function checkPasswordMatch() {
+    var password = $("#crt_pass").val();
+    var confirmPassword = $("#conf_pass").val();
+
+    if (password != confirmPassword)
+        $("#divCheckPasswordMatch").html("Passwords do not match!");
+    else
+        $("#divCheckPasswordMatch").html("Passwords match.");
+}
+
+$(document).ready(function () {
+   $("#txtNewPassword, #txtConfirmPassword").keyup(checkPasswordMatch);
+});
+</script>
+
 <div id="container">
 	<nav class="navbar navbar-default navbar-fixed-top">
 	  <div class="container-fluid">
@@ -182,10 +198,12 @@
 												<div class="cols-sm-10">
 													<div class="input-group">
 												        <span class="input-group-addon"><i class="fa fa-lock fa" aria-hidden="true"></i></span>
-														<input class="form-control" id="conf_pass" name="conf_pass" required="required" type="password" placeholder="Confirm Password"/>
+														<input onChange="checkPasswordMatch();" class="form-control" id="conf_pass" name="conf_pass" required="required" type="password" placeholder="Confirm Password"/>
 													</div>
 												</div>
 											</div>
+											   <div class="registrationFormAlert" id="divCheckPasswordMatch"></div>
+
 											<div class="form-group">
 												<label for="email" class="cols-sm-2 control-label">Email</label>
 												<div class="cols-sm-10">

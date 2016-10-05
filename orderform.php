@@ -6,7 +6,6 @@ include 'modules/loadboot.php';
 include 'modules/config.php';
 
 ?>
-  <link rel="stylesheet" href="/css/orderform.css">
 
 </head>
 
@@ -41,14 +40,13 @@ if($i == 1){
 
 
 ?>
-<footer>
+
 <br>
 <br>
 <br>
 <?php
 include 'modules/footer.php'; 
 ?>
-</footer>
 
 </body>
 </html>

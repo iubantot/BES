@@ -35,6 +35,22 @@ if($action == "Delete Order"){
 				
 	}
 	
+}else if($action == "Cancel Order"){
+	if($status == 2){
+		echo    "<script>
+					alert('You cannot cancel an approved order!');
+					window.location.href='../../account.php';
+				 </script>";
+	}else{
+	$q = "UPDATE `transactions` SET `status` = '4' WHERE `transactions`.`transaction_id` = '$trans'";
+	if ($mysqli->query($q) === TRUE) {
+			   echo    "<script>
+										alert('Transaction Declined!!');
+										window.location.href='../../account.php';
+									</script>";
+				
+	}
+	}
 }
 
 ?>

@@ -43,10 +43,12 @@
 		 <li><a href="team.php"><i class="fa fa-user-secret fa-fw" aria-hidden="true"></i> Our Team</a></li> 
 
 		  <li><a class="dropdown-toggle" data-toggle="dropdown" href="#">
+		  
 		  <?php
-				//include 'modules/sql-connect/getImage.php';
-				
-			echo '<i><img src="modules/sql-connect/getImage.php?id='.$_SESSION['users_id'].'" class="img-circle" width="20" height="20"/> </i>';
+				echo '<i>';
+				include 'modules/sql-connect/getImage2.php';
+				echo '</i>';
+			//echo '<i><img src="modules/sql-connect/getImage.php?id='.$_SESSION['users_id'].'" class="img-circle" width="20" height="20"/> </i>';
 			echo "Welcome, ".$_SESSION['userName'];
 		  ?>
 		  

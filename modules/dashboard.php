@@ -5,7 +5,7 @@
 <script>
 $(document).ready(function(){
 	$("#mySched").hide();
-	$("#myOrders").hide();
+	//$("#myOrders").hide();
 	$("#myAcc").hide();
 	$("#myHelp").hide();
     $("#orders").click(function(){
@@ -57,8 +57,11 @@ $(document).ready(function(){
             <!-- Left column --><center>
             <a href="#">
 			<?php
-			echo '<i><img src="modules/sql-connect/getImage.php?id='.$_SESSION['users_id'].'" id="displaypic" class="img-thumbnail" width="250" height="200"/> </i>';
-
+			echo '<i>';
+							include 'modules/sql-connect/getImage3.php';
+			
+			//echo '<i><img src="modules/sql-connect/getImage.php?id='.$_SESSION['users_id'].'" id="displaypic" class="img-thumbnail" width="250" height="200"/> </i>';
+			echo '</i>';
 			?>
 			</a>
 			</center>
@@ -100,6 +103,7 @@ $(document).ready(function(){
                             <i class="glyphicon glyphicon-plus"></i>
                             <br> My Orders
                         </a>
+						<!--
                         <a href="#" class="btn btn-primary col-sm-3" id="schedules">
                             <i class="fa fa-calendar-check-o fa-fw"></i>
                             <br> My Schedules
@@ -111,7 +115,7 @@ $(document).ready(function(){
                         <a href="#" class="btn btn-primary col-sm-3" id="help">
                             <i class="glyphicon glyphicon-question-sign"></i>
                             <br> Help
-                        </a>
+                        </a> -->
                     </div>
 
 
